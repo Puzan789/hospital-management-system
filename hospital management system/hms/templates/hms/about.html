@@ -1,0 +1,199 @@
+{% include 'hms/base.html' %}
+{% load static %}
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@300;600&family=Montserrat:wght@500&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body {
+  font-family: "Montserrat";
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  max-width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.cont {
+  padding: 0 16px;
+}
+
+.cont::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#pp{
+  color: black;
+}
+.image{
+  max-width:100%;
+  max-height: 200px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about{
+    background-color: #474e5d;
+    color: white;
+}
+p{
+    color: black;
+}
+
+input[type="button"]{
+
+  font-size: 18px;
+  outline: none;
+  border: none;
+  /* padding: 8px 16px; */
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  width: 100%;
+  padding:9px 25px;
+    background-color: rgba(0,136,150);
+}
+input[type="button"]:hover{
+    background: #0c425d;
+}
+.ss{
+    color:white;
+    background-color: rgba(0,136,150);
+    transition: all 0.3s ease;
+}
+.ss:hover{
+    background: #0c425d;
+    transition: all 0.3s ease;
+    
+}
+.title,.op,.button,.ppl.ac{
+    margin-bottom:10px;
+}
+.ac{
+    color: black;
+}
+.ac:hover{
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+<body>
+
+<div class="about-section">
+  <p class="about">The unknown hospital was founded in 1990 BS and we got highly talented and experienced doctors and Nurses. </p>
+ 
+</div>
+<br><br>
+<h1 style="text-align:center;color: rgba(0,136,150);"><b>Our Teams</b> </h1>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img  class="image" src="{% static 'images/elon.webp' %}" alt="">
+      <div class="cont">
+        <h2 class="op"> Dr.laxmiprasada Acharya</h2>
+        <p class="title">Founder</p>
+        <p class="ppl"><h3>A Man With Honour</h3></p>
+        <a class="ac"href="mailto:unknown@gmail.com">&#128231;elon@gmail.com</a>
+        <div class="button">
+            <a href="tel:+977 984567839">
+          <input type="button" value="contact" >
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'images/putin.webp' %}" alt="" class="image">
+      <div class="cont">
+        <h2 class="op">Dr.Hiralal Upadhyaya</h2>
+        <p class="title">CEO</p>
+        <p class="ppl">Talented&Hardworking.</p>
+        <a class="ac" href="mailto:unknown@gmail.com">&#128231;putin@gmail.com</a>
+       <div class="button">
+            <a href="tel:+977 984567839">
+          <input type="button" value="contact" >
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'images/kim.jpg' %}" alt="" class="image">
+      <div class="cont">
+        <h2 class="op">Cholendra Jung Karki  </h2>
+        <p class="title">Coordinator</p>
+        <p class="ppl">Best in the coordinating Field</p>
+        <a class="ac"href="mailto:unknown@gmail.com">&#128231;chol@gmail.com</a>
+       <div class="button">
+            <a href="tel:+977 984567839">
+          <input type="button" value="contact" >
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'images/jack.avif' %}" alt="" class="image">
+      <div class="cont">
+        <h2 class="op">Michael Joshi</h2>
+        <p class="title">CEO</p>
+        <p class="ppl">Talented&Hardworking.</p>
+        <a class="ac"href="mailto:unknown@gmail.com">&#128231;michael@gmail.com</a>
+       <div class="button">
+            <a href="tel:+977 984567839">
+          <input type="button" value="contact" >
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</body>
+</html>
